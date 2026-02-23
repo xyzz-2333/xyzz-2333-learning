@@ -1,0 +1,26 @@
+class Solution:
+    def findErrorNums(self, nums: List[int]) -> List[int]:
+        a=sum(nums)
+        seted=sum(set(nums))
+        r=a-seted
+        c = 0
+        for i in range(1, len(nums)+1):
+            c += i
+        return [r,c-seted]
+'''       
+        a=sorted(nums)
+        if len(a)==2:
+            if a[1]==1:
+                return [1,2]
+            else: return [2,1]
+        if a[1]== a[2]:
+            return [2,1]
+        for i in range(len(a)):
+
+            if len(a)==2 and a[i]==a[i+1] and a[i]==2:
+                return [2,1]
+
+                #气抖冷，凭什么【2,2】的结果不是【2,3】
+                #行吧我知道了 
+            if a[i]==a[i+1]:
+                return [a[i],a[i]+1]'''
