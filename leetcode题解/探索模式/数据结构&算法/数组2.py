@@ -24,3 +24,26 @@ class Solution:
                 #行吧我知道了 
             if a[i]==a[i+1]:
                 return [a[i],a[i]+1]'''
+class Solution:
+    def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
+        r = []
+        for i in nums:
+            c = 0
+            for j in nums:
+                if j < i:
+                    c += 1
+            r.append(c)
+        return r
+
+'''
+    def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
+        list=[]
+        c=0
+        for i in nums:
+            for j in nums:
+                if j < i:
+                    c+=1
+                    list.append(c)
+                c=0
+        return list
+'''
