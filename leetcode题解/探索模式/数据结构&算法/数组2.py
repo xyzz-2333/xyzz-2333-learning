@@ -47,3 +47,9 @@ class Solution:
                 c=0
         return list
 '''
+class Solution:
+    def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
+        l=len(nums)
+        s=set(nums)
+        return [i for i in range(1, len(nums) + 1) if i not in s]
+            
