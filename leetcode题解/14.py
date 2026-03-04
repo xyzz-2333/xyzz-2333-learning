@@ -16,3 +16,6 @@ class Solution:
             else:
                 a = a[:-1]
                 c=0
+
+
+                
