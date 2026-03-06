@@ -15,19 +15,23 @@ def decorator2(func):
         print("调用后")
         return result
     return wrapper
-def timedecorator(func):
+
+def timer(func):
+    #需要time库
+    #第一个有实际意义的装饰器，实测可用
     def wrapper(*args, **kwargs):
         start = time.time()
         result = func(*args, **kwargs)
-        elapsed = time.time() - start
-        print(f"{func.__name__} 运行时间: {elapsed:.6f} 秒")
+        end = time.time()
+        print(f"{func.__name__} 耗时 {end-start:.4f} 秒")
         print(f"运行结果: {result}")
         return result
     return wrapper
-@timedecorator
-def sleep(time):
-    time.sleep(time)
+@timer
+def slow_function(t):
+    time.sleep(t)
+    return "完成"
 if __name__ == '__main__':
-    
-    say_hello()
-    sleep(0.5)
+    slow_function(1)
+    #say_hello()
+    #sleep(0.5)
