@@ -8,7 +8,8 @@ def SelectSortv1(list=[],visible=1):
         min+=1
         if min==l:
             return list
-
+def SelectSortv2(list=[],visible=1):
+    l=len(list)
 if __name__ == '__main__':
     l1=[1,4,7,2,5,8,3,6,9,0]
     print(SelectSort(l1))
