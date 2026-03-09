@@ -1,4 +1,5 @@
 def SelectSortv1(list=[],visible=1):
+    #事实上不是选择排序，更像冒泡
     l=len(list)
     min=0
     while True:
