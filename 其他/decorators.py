@@ -26,7 +26,9 @@ def timer(func):
         result = func(*args, **kwargs)
         end = time.time()
         print(f"{func.__name__} 耗时 {end-start:.4f} 秒")
-        print(f"运行结果: {result}")
+        #print(f"运行结果: {result}")
+        #一般需要输出的话会自己加print，塞在装饰器李会输出两次
+        #回响形态了
         return result
     return wrapper
 @timer
