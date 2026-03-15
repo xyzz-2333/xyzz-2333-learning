@@ -1,3 +1,5 @@
+'''decorator会和某个官方模块撞名字导致导入不了，故改名
+'''
 import time
 def decorator1(func):
     def wrapper():
