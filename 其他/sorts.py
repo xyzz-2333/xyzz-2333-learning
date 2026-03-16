@@ -23,11 +23,13 @@ def SelectSortv2(list=[],visible=1):
         if visible:
             print(list)
     return list
-def SelectSortv3(list=[],visible=1):
+@timer
+def SelectSortv3(list=[],visible=1):#应该还能优化倒是
     l=len(list)
     for i in range(l-1):
+        min_index=i 
         for j in range(i+1,l):
-            if list[j]<list[i]:
+            if list[j]<list[min_index]:
                 min_index=j
         if min_index!=i:
             list[i],list[min_index]=list[min_index],list[i]
@@ -35,5 +37,6 @@ def SelectSortv3(list=[],visible=1):
             print(list)
     return list
 if __name__ == '__main__':
-    l1=[1,4,7,2,5,8,3,6,9,0]
-    print(SelectSortv3(l1))
+    l1=[1,4,7,2,5,8,3,6,9,0,12,15,14,13,11,-1,65536]
+    print(SelectSortv2(l1.copy(), visible=0))
+    print(SelectSortv3(l1.copy(), visible=0)) 
