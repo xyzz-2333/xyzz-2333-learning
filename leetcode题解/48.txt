@@ -1,0 +1,14 @@
+刚写完1886，这个和1886完全一致
+从那把rotate抠过来直接ac
+class Solution:
+    def rotate(self, matrix: List[List[int]]) -> None:
+        """
+        Do not return anything, modify matrix in-place instead.
+        """
+        martix=matrix        
+        for i in range(len(martix)):          #行
+            for j in range(i+1,len(martix[i])):   #列
+                martix[i][j],martix[j][i]=martix[j][i],martix[i][j]#转置
+        for i in range(len(martix)):
+            martix[i].reverse()
+        return martix
