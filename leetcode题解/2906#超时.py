@@ -1,4 +1,4 @@
-class Solution:
+class Solution:#O(n4)还是太弱了
     def constructProductMatrix(self, grid) : #List[List[int]]-> List[List[int]]:
         matrix = [[0] *len(grid[0])  for _ in range(len(grid))]
         for i in range(len(grid)):          #行
@@ -13,7 +13,14 @@ class Solution:
                 r=r%12345
                 matrix[i][j]=r         
         return matrix
-
+class Solution:
+    def constructProductMatrix(self, grid) : #List[List[int]]-> List[List[int]]:
+        before,after=[[0] *len(grid[0])  for _ in range(len(grid))],[[0] *len(grid[0])  for _ in range(len(grid))]
+        matrix =[[0] *len(grid[0])  for _ in range(len(grid))]
+        for i in range(len(grid)):          #行
+            for j in range(len(grid[0])):   #列
+                r=1
+                r=r*grid[i][j]
 
 
 if __name__=='__main__':
