@@ -15,7 +15,7 @@ class Solution:#O(n4)还是太弱了
         return matrix
 class Solution:
     def constructProductMatrix(self, grid) : #List[List[int]]-> List[List[int]]:
-        before,after=[[0] *len(grid[0])  for _ in range(len(grid))],[[0] *len(grid[0])  for _ in range(len(grid))]
+        before,after=[1]*
         matrix =[[0] *len(grid[0])  for _ in range(len(grid))]
         for i in range(len(grid)):          #行
             for j in range(len(grid[0])):   #列
