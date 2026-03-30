@@ -1,0 +1,2 @@
+(base) PS D:\softwares\PortableGit\xyzz-2333-learning> git add .\git\Untitled-1.txt
+(base) PS D:\softwares\PortableGit\xyzz-2333-learning> git mv .\git\Untitled-1.txt mv.txt
