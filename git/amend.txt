@@ -1,0 +1,6 @@
+(base) PS D:\softwares\PortableGit\xyzz-2333-learning> git config --global core.editor
+vscode
+(base) PS D:\softwares\PortableGit\xyzz-2333-learning> git config --global core.editor "code --wait"
+(base) PS D:\softwares\PortableGit\xyzz-2333-learning> git config --global core.editor
+code --wait
+(base) PS D:\softwares\PortableGit\xyzz-2333-learning> git commit --amend
