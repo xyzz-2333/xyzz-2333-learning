@@ -1,1 +1,2 @@
 git checkout -- [file]
+#下面的修改已经消失
