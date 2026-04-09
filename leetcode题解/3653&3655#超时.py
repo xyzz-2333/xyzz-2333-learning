@@ -11,3 +11,6 @@ class Solution:
         for i in range(len(nums)):
             r=r^nums[i]
         return r
+#3655其实就是加大了数据规模
+#但是看不懂
+#反正是hard，以后再说
