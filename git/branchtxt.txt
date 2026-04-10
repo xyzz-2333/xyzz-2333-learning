@@ -1,0 +1,4 @@
+git branch <name>
+git branch -d <name>#移除分支
+git checkout <name>
+git checkout -b <name> #创建并切换到分支
