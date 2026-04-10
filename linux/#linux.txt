@@ -1,0 +1,28 @@
+#linux
+#使用过的指令记录
+pwd 获取当前位置
+ls =list（？）
+ls -la 显示详细信息
+cd 移动当前位置
+#不带参数为直接移动到root
+mkdir =make dir
+rm =remove
+cat= concatenate files
+cat <filepath>
+
+adduser
+whoami 获取当前用户名
+exit
+history
+
+
+
+tmux new -s <name>创建新窗口
+# 按 Ctrl+B 再按 D 分离会话
+切屏：tmux attach -t <name>
+列出会话：tmux ls
+切换会话：tmux switch -t 会话名
+结束会话：tmux kill-session -t mcserver
+Ctrl+B %：垂直分屏
+Ctrl+B "：水平分屏
+Ctrl+B 方向键：切换窗格
