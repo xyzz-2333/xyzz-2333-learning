@@ -9,6 +9,9 @@ mkdir =make dir
 rm =remove
 cat= concatenate files
 cat <filepath>
+mv 移动，重命名
+cp 复制
+unzip( 需要apt安装)
 
 adduser
 whoami 获取当前用户名
