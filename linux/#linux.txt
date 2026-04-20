@@ -12,7 +12,7 @@ cat <filepath>
 mv 移动，重命名
 cp 复制
 unzip( 需要apt安装)
-
+nano 文件名 打开，编辑后 Ctrl+O 保存，Ctrl+X
 adduser
 whoami 获取当前用户名
 exit
